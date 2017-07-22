@@ -48,8 +48,8 @@ function webdev(){
     var description = createEl('p', 'project__element project__description', null, content.description)
     var image = createEl('img', 'project__element project__img', null, null, content.src);
     var info = createEl('div', 'project__element project__info');
-    var code = createEl('a', 'project__element project__code', null, 'code/', null, null, content.github);
-    var site = createEl('a', 'project__element project__site', null, 'site', null, null, content.url);
+    var code = createEl('a', 'project__element project__code', null, 'code /', null, null, content.github);
+    var site = createEl('a', 'project__element project__site', null, ' site', null, null, content.url);
 
     contentHolder.appendChild(holder);
     holder.appendChild(title);
