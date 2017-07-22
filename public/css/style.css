@@ -1,0 +1,48 @@
+@font-face {
+    font-family: GT-Walsheim;
+    font-weight: bold;
+    src: url("./../../fonts/GT-WalsheimRegular.otf") format("opentype");
+}
+
+body {
+	font-family: 'GT-Walsheim';
+	background-color: #E5E5E5;
+}
+
+.title {
+	background-color: #E5E5E5;
+	font-size: 40px;
+	color: #454442;
+	width: 200px;
+	position: absolute;
+	top: 7%;
+	letter-spacing: 7px;
+	/*height: 100px;*/
+}
+
+/*border*/
+
+#top, #bottom, #left, #right {
+	background: white;
+	position: fixed;
+}
+#left, #right {
+	top: 20px; bottom: 20px;
+	width: 15px;
+}
+#left {
+  left: 20px;
+}
+#right {
+  right: 20px;
+}
+#top, #bottom {
+		left: 20px; right: 20px;
+		height: 15px;
+}
+#top {
+  top: 20px;
+}
+#bottom {
+  bottom: 20px;
+}
