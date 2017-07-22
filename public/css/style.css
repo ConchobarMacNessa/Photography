@@ -17,7 +17,22 @@ body {
 	position: absolute;
 	top: 7%;
 	letter-spacing: 7px;
-	/*height: 100px;*/
+}
+
+/*List items*/
+
+.navBar {
+	position: absolute;
+	bottom: 5%;
+}
+
+.navList {
+	list-style-type: none;
+}
+
+.navList__item {
+	padding-top: 8px;
+	color: #454442;
 }
 
 /*border*/
@@ -45,4 +60,34 @@ body {
 }
 #bottom {
   bottom: 20px;
+}
+
+/*Content*/
+#content-holder {
+	position: absolute;
+	left: 30%;
+	top: 10%;
+	height: 90vh;
+	width: 100em;
+	overflow: scroll;
+	margin-bottom: 1.5em;
+}
+
+.project {
+	position: relative;
+	margin-bottom: 3em;
+}
+
+.project__element {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.project__img {
+	margin-top: 1em;
+	width: 30em;
+}
+
+.right-align-image {
+	right: -80%;
 }
