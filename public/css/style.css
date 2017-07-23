@@ -11,12 +11,12 @@
 body {
 	font-family: 'GT-Walsheim';
 	background-color: #E5E5E5;
+	color: #454442;
 }
 
 .title {
 	background-color: #E5E5E5;
 	font-size: 40px;
-	color: #454442;
 	width: 200px;
 	position: absolute;
 	top: 7%;
@@ -95,4 +95,24 @@ body {
 
 .right-align-image {
 	right: -35%;
+}
+
+.project__title {
+	font-size: 1.1em;
+}
+
+.project__description {
+	font-size: 0.9em;
+}
+
+.project__code, .project__site {
+	font-size: 0.9em;
+	color: inherit;
+	text-decoration: none;
+}
+
+.project__code:hover, .project__site:hover, .project__code:visited, .project__site:visited {
+	color: inherit;
+  text-decoration:none;
+  cursor:pointer;
 }

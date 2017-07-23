@@ -2,7 +2,7 @@ var webDevPortfolio = [
   {
     title: 'Asteroid Watch',
     description: 'asteroids in d3.js',
-    src: 'https://www.wpfreeware.com/wp-content/uploads/2014/09/placeholder-images.jpg',
+    src: './../assets/portfolio_images/AW_image.png',
     github: 'https://github.com/ConchobarMacNessa/Asteroid-Watch',
     url: 'http://asteroid-data.surge.sh/',
     position: 0
@@ -10,7 +10,7 @@ var webDevPortfolio = [
   {
     title: 'Echo',
     description: 'memory storing app for the Anna Freud Centre',
-    src: 'https://www.wpfreeware.com/wp-content/uploads/2014/09/placeholder-images.jpg',
+    src: './../assets/portfolio_images/EAF_image.png',
     github: 'https://github.com/pbywater/echo',
     url: 'http://echo-af.herokuapp.com/',
     position: 1
@@ -18,7 +18,7 @@ var webDevPortfolio = [
   {
     title: 'Genie in a bot',
     description: 'facebook chatbot for the 2017 general elections',
-    src: 'https://www.wpfreeware.com/wp-content/uploads/2014/09/placeholder-images.jpg',
+    src: './../assets/portfolio_images/GFB_image.png',
     github: 'https://github.com/FAC10/Genie-in-a-Bot',
     url: 'https://www.facebook.com/politicalgenie/',
     position: 2
@@ -26,7 +26,7 @@ var webDevPortfolio = [
   {
     title: 'Rover Vision',
     description: 'see life through curiosity\'s eyes',
-    src: 'https://www.wpfreeware.com/wp-content/uploads/2014/09/placeholder-images.jpg',
+    src: './../assets/portfolio_images/RV_image.png',
     github: 'https://github.com/ConchobarMacNessa/Rover-Images',
     url: 'https://rover-vision.herokuapp.com/',
     position: 3
