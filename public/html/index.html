@@ -5,29 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
     <title>Alice Eleanor Carr</title>
 </head>
 <body>
 
   <div id="left">
-    <div class="title">
+
+    <div class="title page">
       <p>alice carr</p>
     </div>
   </div>
+
   <div id="right"></div>
   <div id="top"></div>
     <div id="content-holder"></div>
 
-    <div class="navBar">
-      <ul class="navList">
-        <li class="navList__item" onclick="webdev()">Web Dev</li>
-        <li class="navList__item">Visual Code</li>
-        <li class="navList__item">Art</li>
-        <li class="navList__item">Photography</li>
-      </ul>
-    </div>
+  <div class="inner-content"></div>
+      <div class="navBar page">
+        <ul class="navList">
+          <li class="navList__item" onclick="webdev()">Web Dev</li>
+          <li class="navList__item" onclick ="visualCode()">Visual Code</li>
+          <li class="navList__item">Art</li>
+          <li class="navList__item">Photography</li>
+          <li class="navList__item" onclick="tbd()">tbd</li>
+        </ul>
+      </div>
+
+
   <div id="bottom"></div>
 
 </body>
   <script src="./../js/webdev.js"></script>
+  <script src="./../js/visualCode.js"></script>
+  <script src="./../js/tbd.js"></script>
 </html>

@@ -38,15 +38,15 @@ function webdev(){
   webDevPortfolio.forEach(function(content){
     var position = '';
     if (content.position % 2) {
-      position = 'project right-align-image';
+      position = 'page project right-align-image';
     } else {
-      position = 'project left-align-image';
+      position = 'page project left-align-image';
     }
 
     var holder = createEl('div', position);
     var title = createEl('h2', 'project__element project__title', null, content.title);
     var description = createEl('p', 'project__element project__description', null, content.description)
-    var image = createEl('img', 'project__element project__img', null, null, content.src);
+    var image = createEl('img', 'project__element project__img', null, null, content.src, null);
     var info = createEl('div', 'project__element project__info');
     var code = createEl('a', 'project__element project__code', null, 'code /', null, null, content.github);
     var site = createEl('a', 'project__element project__site', null, ' site', null, null, content.url);

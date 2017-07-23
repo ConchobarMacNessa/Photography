@@ -3,6 +3,7 @@
     font-weight: bold;
     src: url("./../../fonts/GT-WalsheimRegular.otf") format("opentype");
 }
+
 @font-face {
     font-family: GT-Walsheim-Thin;
     src: url("./../../fonts/GT-Walsheim-Pro-Trial-Thin.otf") format("opentype");
@@ -76,7 +77,12 @@ body {
 	overflow: scroll;
 	margin-bottom: 1.5em;
 	font-family: GT-Walsheim-Thin;
+
 }
+
+#FFFFFF
+
+
 
 .project {
 	position: relative;
