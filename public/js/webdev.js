@@ -34,6 +34,11 @@ var webDevPortfolio = [
 ]
 
 function webdev(){
+  var page = document.getElementsByClassName('page');
+  while (page[0]) {
+      page[0].parentNode.removeChild(page[0]);
+  }
+
   var contentHolder = document.getElementById('content-holder');
   webDevPortfolio.forEach(function(content){
     var position = '';

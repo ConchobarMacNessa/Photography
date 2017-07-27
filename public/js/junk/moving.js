@@ -88,9 +88,7 @@ var svg = d3.select(".inner-content")
     setTimeout(function () {
       circles
       .append('circle')
-      .attr('class', (d) =>{
-         return 'planet ' + d.name;
-       })
+      .attr('class', 'planet')
       .attr('cy', 150)
       .attr('cx', (d, i) => {
         return 70 * i;
@@ -104,43 +102,36 @@ var svg = d3.select(".inner-content")
 
   }, 1000);
 
-  var sun = d3
-    .selectAll('#sun')
-    .on('click', start)
 
-  function dragstarted(d) {
-    d3.select(this).raise().classed("active", true);
-  }
+// function dragstarted(d) {
+//   // console.log('drag started');
+// d3.select(this).raise().classed("active", true);
+// }
+//
+// function dragged(d) {
+// d3.select(this).attr("cx", d.x = d3.event.x).attr("cy", d.y = d3.event.y);
+// }
+//
+// function dragended(d) {
+// d3.select(this).classed("active", false);
+// }
 
-  function dragged(d) {
-    d3.select(this).attr("cx", d.x = d3.event.x).attr("cy", d.y = d3.event.y);
-  }
+    simulation.nodes(planetData)
+      .on('tick', ticked)
+      .velocityDecay(0)
+      .alphaTarget(1)
+      .force('box', boxForce);
 
-  function dragended(d) {
-    d3.select(this).classed("active", false);
-  }
-
-function start(){
-  console.log('hi');
-  sun
-    .style('fill', 'red');
-    // simulation.nodes(planetData)
-    //   .on('tick', ticked)
-    //   .velocityDecay(0.05)
-    //   .alphaTarget(1)
-    //   .force('box', boxForce);
-    //
-    //   function ticked() {
-    //     var planetCircle = svg.
-    //     selectAll('.planet')
-    //     .attr('cx', function(d){
-    //       return d.x
-    //     })
-    //     .attr('cy', function(d){
-    //       return d.y
-    //     })
-    //   };
-    }
+      function ticked() {
+        var planetCircle = svg.
+        selectAll('.planet')
+        .attr('cx', function(d){
+          return d.x
+        })
+        .attr('cy', function(d){
+          return d.y
+        })
+      };
 // for(var i = 0; i< 50; i++){
 //   svg
 //   .append('circle')
